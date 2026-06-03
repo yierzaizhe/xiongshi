@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="宠友互助小程序官网，面向宠物互助、寻宠、健康记录和通知管理。" />
+    <title>宠友互助｜让附近宠友一起照顾毛孩子</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <header class="site-nav">
+      <a class="brand" href="#top" aria-label="宠友互助">
+        <span class="brand-mark"></span>
+        <span>宠友互助</span>
+      </a>
+      <nav>
+        <a href="#features">功能</a>
+        <a href="#finding">寻宠</a>
+        <a href="#publish">发布信息</a>
+        <a href="#health">健康</a>
+        <a href="#access">入口</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-panel">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/home-banner.jpg" alt="" />
+          <div class="hero-glow"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">WeChat Mini Program</p>
+          <h1>宠友互助</h1>
+          <p class="hero-lead">让附近宠友互相帮忙：临时喂养、寻宠协作、健康记录和消息提醒，都在一个轻量小程序里完成。</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#publish">发布宠物丢失信息</a>
+            <a class="secondary-action" href="#features">了解功能</a>
+          </div>
+        </div>
+        <div class="phone-stage" aria-label="小程序界面预览">
+          <div class="phone">
+            <div class="island"></div>
+            <div class="screen">
+              <div class="mini-nav">寻宠</div>
+              <div class="mini-title">寻宠互助</div>
+              <div class="mini-tabs">
+                <span>全部</span><span class="active">宠物丢失</span><span>捡到宠物</span>
+              </div>
+              <div class="mini-card">
+                <img src="assets/finding-cover.jpg" alt="" />
+                <div>
+                  <b>宠物丢失求助</b>
+                  <p>山西省 晋城市 · 金毛 · 建设路附近</p>
+                  <small>点赞 28 · 浏览 146</small>
+                </div>
+              </div>
+              <div class="mini-card">
+                <img src="assets/health-bg.jpg" alt="" />
+                <div>
+                  <b>健康记录</b>
+                  <p>疫苗、驱虫、体重变化一页掌握</p>
+                  <small>提醒 3 条</small>
+                </div>
+              </div>
+              <div class="mini-dock">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Who It Helps</p>
+          <h2>给宠物主人，也给愿意帮忙的附近宠友</h2>
+        </div>
+        <div class="audience-grid">
+          <article>
+            <h3>宠物走失</h3>
+            <p>快速发布丢失时间、地点、宠物特征、联系电话和酬谢信息，让附近用户更容易帮忙留意。</p>
+          </article>
+          <article>
+            <h3>捡到宠物</h3>
+            <p>发布捡到地点、宠物照片和联系信息，帮助宠物尽快找到主人，减少线索散落在群聊里的情况。</p>
+          </article>
+          <article>
+            <h3>临时照看</h3>
+            <p>出差、加班、短途离开时，可以发布喂养、遛狗、临时照看需求，附近宠友在线申请。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="features reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Core Modules</p>
+          <h2>一套为高频宠物场景设计的工具</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>互助服务</h3>
+            <p>发布喂养、遛狗、临时照看需求，附近宠友可以申请，双方在订单状态里完成流转。</p>
+          </article>
+          <article class="feature-card intense">
+            <span class="feature-icon">02</span>
+            <h3>寻宠协作</h3>
+            <p>发布宠物丢失或捡到宠物信息，支持省市筛选、点赞扩散、浏览排序和电话联系。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>健康档案</h3>
+            <p>记录宠物基础资料、疫苗、驱虫、体重和健康摘要，帮助主人长期管理宠物状态。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">04</span>
+            <h3>通知中心</h3>
+            <p>互助申请、状态变更和寻宠点赞会形成未读消息，并在 Tab 上展示角标。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="finding" class="split-section reveal">
+        <div class="visual-card finding-visual">
+          <img src="assets/finding-cover.jpg" alt="寻宠默认视觉" />
+        </div>
+        <div class="copy-block">
+          <p class="eyebrow">Lost & Found</p>
+          <h2>寻宠列表更紧凑，更多线索一屏可见</h2>
+          <p>左图右文信息流展示宠物类型、位置、说明、点赞和浏览量。用户可以按最新、点赞、浏览排序，让高价值线索更快被看见。</p>
+          <ul class="metric-list">
+            <li><b>省市筛选</b><span>从省份到城市逐级选择</span></li>
+            <li><b>浏览热度</b><span>进入详情自动累计浏览量</span></li>
+            <li><b>点赞通知</b><span>发布者能收到互动提醒</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="publish" class="publish-flow reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Publish Pet Info</p>
+          <h2>发布宠物丢失或捡到宠物信息，重点字段一次填清楚</h2>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-card">
+            <span>1</span>
+            <h3>选择类型</h3>
+            <p>宠物丢失或捡到宠物，列表会用不同标签区分，方便用户快速判断。</p>
+          </article>
+          <article class="flow-card">
+            <span>2</span>
+            <h3>填写位置</h3>
+            <p>先选择省份和城市，再补充小区、街道、商圈等详细位置。</p>
+          </article>
+          <article class="flow-card">
+            <span>3</span>
+            <h3>补充特征</h3>
+            <p>宠物类型、品种、毛色、项圈、性格、最后出现时间和现场照片都可以记录。</p>
+          </article>
+          <article class="flow-card">
+            <span>4</span>
+            <h3>保持联系</h3>
+            <p>留下联系人和电话，详情页可直接拨打，点赞互动会提醒发布者。</p>
+          </article>
+        </div>
+        <div class="field-wall">
+          <span>宠物名</span>
+          <span>宠物类型</span>
+          <span>品种</span>
+          <span>毛色</span>
+          <span>省份</span>
+          <span>城市</span>
+          <span>详细位置</span>
+          <span>丢失/捡到时间</span>
+          <span>联系人</span>
+          <span>手机号</span>
+          <span>酬谢信息</span>
+          <span>现场图片</span>
+        </div>
+      </section>
+
+      <section class="signal-system reveal">
+        <div class="section-heading">
+          <p class="eyebrow">After Publishing</p>
+          <h2>发布之后，线索会被持续推进</h2>
+        </div>
+        <div class="signal-layout">
+          <div class="signal-phone">
+            <div class="signal-item active">
+              <span>01</span>
+              <div>
+                <b>信息进入寻宠列表</b>
+                <p>按照发布时间、浏览量、点赞量进入排序，更多人能先看到高热度线索。</p>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span>02</span>
+              <div>
+                <b>用户点赞扩散</b>
+                <p>附近用户可以点赞支持，发布者会收到消息提醒，知道线索仍在被关注。</p>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span>03</span>
+              <div>
+                <b>详情页直接联系</b>
+                <p>线索确认后可直接电话联系，减少在群聊里反复询问的时间。</p>
+              </div>
+            </div>
+          </div>
+          <div class="message-stack">
+            <article>
+              <small>消息提醒</small>
+              <h3>不错过新的互动</h3>
+              <p>寻宠点赞、互助申请、订单状态变化都会进入消息中心，并同步更新未读角标。</p>
+            </article>
+            <article>
+              <small>内容治理</small>
+              <h3>管理员保障信息质量</h3>
+              <p>管理员手机号识别后可进入后台，对虚假信息、违规内容执行下架、拉黑等操作。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="health" class="dark-band reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Health Management</p>
+          <h2>不只是找宠物，也记录日常健康</h2>
+        </div>
+        <div class="health-board">
+          <img src="assets/health-bg.jpg" alt="宠物健康管理视觉" />
+          <div class="health-copy">
+            <span>疫苗</span>
+            <span>驱虫</span>
+            <span>体重</span>
+            <span>档案</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-strip reveal">
+        <div>
+          <p class="eyebrow">Cloud Development</p>
+          <h2>微信云开发支撑业务闭环</h2>
+          <p>小程序采用云函数、云数据库和云存储承载登录、发布、点赞、通知、管理员下架和拉黑能力。</p>
+        </div>
+        <div class="admin-grid">
+          <span>管理员</span>
+          <span>强制下架</span>
+          <span>拉黑用户</span>
+          <span>消息通知</span>
+        </div>
+      </section>
+
+      <section id="access" class="launch reveal">
+        <p class="eyebrow">Mini Program Access</p>
+        <h2>打开小程序，就能发布寻宠信息</h2>
+        <p>用户进入「寻宠」页面，点击右上角加号即可发布宠物丢失或捡到宠物信息。官网后续可以在这里放小程序码，让用户扫码进入。</p>
+        <div class="access-card">
+          <div class="qr-placeholder">
+            <span></span>
+            <b>小程序码</b>
+          </div>
+          <div class="access-copy">
+            <h3>扫码进入宠友互助</h3>
+            <p>上线后替换为真实小程序码，支持微信内直接扫码访问。</p>
+            <div class="access-tags">
+              <span>寻宠发布</span>
+              <span>附近互助</span>
+              <span>健康档案</span>
+              <span>消息提醒</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>宠友互助</span>
+      <span>Built for WeChat Mini Program · Cloud Development</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
